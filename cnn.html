@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html">
+	<title></title>
+	<style type="text/css">
+		body{
+			margin:0 ;
+		}
+		#container{
+			width:100%;
+			
+
+		}
+
+		#headerBg{
+			width: 100%;
+			background-color: #000000;
+			height: 75px;
+		}
+
+		#interior
+		{
+			
+			
+			
+			width: 1100px;
+			
+			margin: 0px auto;
+		}
+
+		#header
+		{
+			
+			height:100px;
+			vertical-align: top;
+			width: 100%;
+
+		}
+
+		#logo
+		{
+			width: 85px;
+			height: 85px;
+			background-image:url("images/logo.png");
+			float: left;
+			
+			 display: inline-block;
+		}
+		
+		/*#nav
+		{
+			width:995px;
+			float:left;
+			display: inline-block;
+			margin-left: 20px;
+			
+			color: white;
+
+		}*/
+		#topNav{
+			width: 1015px;
+			float: left;
+			color: #fff;
+			height:40px;
+			background-color: black;
+			
+			
+		}
+
+		.topNavFont{
+			font-size: 1.25em;
+			
+			color: #fff;
+			font-family: sans-serif;
+			padding-left: 15px;
+			padding-right: 12px;
+			display: inline-block;
+			
+			line-height: 40px;
+			vertical-align: middle;
+			
+		}
+		.greyFont{
+			color: #ccc
+		}
+
+		.topNavFloatRight{
+			float:right;
+			width:300px;
+		}
+		.topNavRight{
+			font-size: 0.9em;
+			font-weight: bold;
+			color: #999;
+			font-family: sans-serif;
+			padding-left: 15px;
+			padding-right: 12px;
+			display: inline-block;
+			margin-bottom: 5px;
+			line-height: 40px;
+			vertical-align: middle;
+			float: right;
+			
+		}
+
+		#bottomNav{
+			width: 1015px;
+			float: left;
+			color: white;
+			height:35px;
+			background-color: #ccc;
+			margin: 0 auto;
+			float: left;
+			
+		}
+
+		.bottomNavFont{
+			font-size: 0.95em;
+			font-weight: 400;
+			color: #222;
+			font-family: sans-serif;
+			padding-left: 15px;
+			padding-right: 12px;
+			display: inline-block;
+			margin-bottom: 5px;
+			line-height: 35px;
+			vertical-align: middle;
+			
+		}
+
+		.moneyFont{
+
+			font-size: 0.95em;
+			font-weight: 400;
+			color: #fff;
+			
+			font-family: sans-serif;
+			padding-left: 15px;
+			padding-right: 12px;
+			display: inline-block;
+			margin-bottom: 5px;
+			line-height: 35px;
+			vertical-align: middle;
+			background-color: #006598;
+		
+		}
+
+		.bottomLiveTV{
+
+			font-size: 0.95em;
+			font-weight: 400;
+			color: #fff;
+			float: right;
+
+			font-family: sans-serif;
+			padding-left: 15px;
+			padding-right: 12px;
+			display: inline-block;
+			margin-bottom: 5px;
+			line-height: 35px;
+			vertical-align: middle;
+			background-color: #c00;
+		
+		}
+
+		.searchBox{
+
+			font-size: 0.95em;
+			font-weight: 400;
+			color: #fff;
+			float: right;
+
+			font-family: sans-serif;
+			padding-left: 15px;
+			padding-right: 12px;
+			display: inline-block;
+			margin-bottom: 5px;
+			line-height: 40px;
+			vertical-align: middle;
+			background-color: #333;
+
+
+		
+		}
+
+		.mainSearch input{
+			height: 32px;
+			vertical-align: middle;
+			line-height: 35px;
+			width: 150px;
+			background-color: #333;
+			border:0;
+			color: #999;
+			float: right;
+			font-size:0.95em;
+			outline:none;
+			display: inline-block;
+		}
+		
+
+		/*<!----------------------------->
+		 <!==== main content section====>
+		 <!----------------------------->*/
+
+		 #content{
+		 	width:100%;
+		 }
+		 #mainLeft{
+		 	width:300px;
+		 	background-color: #f2f2f2;
+		 	float: left;
+		 }
+
+		 .mainLeftHeading{
+		 	color: #555;
+		 	font-size: 1em;
+		 	font-weight: 700;
+
+		 	background-color: #f2f2f2;
+		 	border-bottom-width: 1px;
+		 	border-bottom-color: #ccc;
+		 	border-bottom-style: solid;
+		 	height: 37px;
+		 }
+		 .mainLeftHeadingFont{
+		 	font-family: sans-serif;
+		 	padding: 10px;
+		 }
+
+		 .mainLeftItem{
+		 	vertical-align: middle;
+		 	color: #222; 
+		 	padding-bottom: 15px;
+		 	background-color: #fff;
+		 	border-top-width: 1px;
+		 	border-top-color: #ccc;
+		 	border-top-style: solid;
+		 	height: 37px;
+		 
+		 }
+		 .mainLeftItemFont{
+		 	
+		 	font-weight: 300;
+		 	vertical-align: middle;
+		 	background-color: #fff;
+		 	line-height: 37px;
+		 	width: 85%;
+		 	
+		 }
+		 
+		 #extraPaddingTop{
+		 	
+		 
+		 	margin-top: 20px;
+
+		 }
+
+		 #mainRight{
+		 	
+		 	vertical-align: top;
+		 	float :right;
+		 	width: 780px;
+		 	background-color: #000;
+		 }
+
+		 #mainNewsStory{
+		 	
+		 	width: 780px;
+		 	height: 439px;
+		 	background-image: url("images/mainImage.jpg");
+
+		 }
+
+		 #mainStoryInfoTop{
+		 	height:308px;
+		 	background-color: transparent;
+		 	vertical-align: bottom;
+		 }
+
+		 #mainStoryInfo{
+		 	height:130px;
+		 	background-color: rgba(255,255,255,0.9);
+		 	vertical-align: bottom;
+		 }
+
+		 #mainStoryLinks{
+		 	vertical-align: middle;
+		 	width:100%;
+		 	padding: 5px;
+		 	float: left;
+		 }
+		 a.big:link{
+		 	font-size: 2.9em;
+		 	color: #222;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+		 a.big:hover{
+		 	font-size: 2.9em;
+		 	color: #c00;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+		 a.big:visited{
+		 	font-size: 2.9em;
+		 	color: #222;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+		 a.big:active{
+		 	font-size: 2.9em;
+		 	color: #c00;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+
+		 a.medium:link{
+		 	font-size:1.4em;
+		 	color: #444;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 300PX;
+		 }
+		 a.medium:hover{
+		 	font-size:1.4em;
+		 	color: #c00;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 300PX;
+		 }
+		 a.medium:visited{
+		 	font-size:1.4em;
+		 	color: #444;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 300PX;
+		 }
+		 a.medium:active{
+		 	font-size:1.4em;
+		 	color: #c00;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 300PX;
+		 }
+
+		 a.small:link{
+		 	font-size:1em;
+		 	color: #006598;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 700PX;
+		 	background-color:transparent;
+		 	border-left-width: 3px;
+		 	border-left-color: #ccc;
+		 	border-left-style: solid;
+		 }
+		 a.small:hover{
+		 	font-size:1em;
+		 	color: #c00;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 700PX;
+		 	
+		 	
+		 	background-color: transparent;
+		 	border-left-width: 3px;
+		 	border-left-color: #ccc;
+		 	border-left-style: solid;
+		 }
+		 a.small:visited{
+		 	font-size:1em;
+		 	color: #006598;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 700PX;
+		 	
+		 	background-color: transparent;
+		 	border-left-width: 3px;
+		 	border-left-color: #ccc;
+		 	border-left-style: solid;
+		 }
+		 a.small:active{
+		 	font-size:1em;
+		 	color: #c00;
+		 	font-family: sans-serif;
+		 	text-decoration: none;
+		 	font-weight: 700PX;
+		 	background-color: transparent;
+		 	border-left-width: 3px;
+		 	border-left-color: #ccc;
+		 	border-left-style: solid;
+		 }
+
+		 #gapNewsRows{
+		 	width: 780px;
+		 	height: 100px;
+		 }
+		
+
+		 #news1{
+		 	vertical-align: top;
+		 	float :left;
+		 	
+		 	background-color: #000;
+		 	width: 40%;
+		 	height: 259px;
+		 	
+		 	margin:20px;
+		 }
+
+		 .new1Image{
+		 	vertical-align: top;
+		 	float :left;
+		 	
+		 	background-color: #000;
+		 	width: 100%;
+		 	height: 259px;
+		 	background-image: url(images/news1.jpg);
+		 	
+		 }
+
+		 .news1Heading{
+		 	margin-top: 5px;
+		 	width: 100%;
+		 	height:30px;
+		 	
+		 	
+		 	font-size: 1em;
+		 	border: 5px;  
+		 	color: #fff;
+
+		 }
+
+		 a.news1Heading:link{
+		 	font-size:1.4em;
+		 	color: #444;
+		 	
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+		 a.news1Heading:hover{
+		 	font-size:1.4em;
+		 	color: #c00;
+		 	
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+		 a.news1Heading:visited{
+		 
+		 	font-size:1.4em;
+		 	color: #444;
+		 
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+		 a.news1Heading:active{
+		 	font-size:1.4em;
+		 	color: #c00;
+		 	
+		 	text-decoration: none;
+		 	font-weight: 600PX;
+		 }
+
+		 #politics{
+		 	margin-top: 20px;
+		 	float: right;
+		 	width:300px;
+		 	background-color: #f2f2f2;
+		 	float: left;
+		 }
+
+		 .politicsHeading{
+		 	color: #555;
+		 	font-size: 1em;
+		 	font-weight: 700;
+
+		 	background-color: #f2f2f2;
+		 	border-bottom-width: 1px;
+		 	border-bottom-color: #ccc;
+		 	border-bottom-style: solid;
+		 	height: 30px;
+		 }
+		 .politicsHeadingFont{
+		 	font-family: sans-serif;
+		 	padding: 10px;
+		 }
+
+		 .politicsItem{
+		 	vertical-align: middle;
+		 	color: #222; 
+		 	line-height: 12px;
+		 	/*padding-bottom: 15px;*/
+		 	background-color: #fff;
+		 	border-top-width: 1px;
+		 	border-top-color: #ccc;
+		 	border-top-style: solid;
+		 	height: 67px;
+		 
+		 }
+		 .politicsItemFont{
+		 	
+		 	font-weight: 300;
+		 	vertical-align: top;
+		 	background-color: #fff;
+		 	line-height: 37px;
+		 	width: 85%;
+		 	
+		 }
+
+		 a.politicsLinks:link
+		 { 
+		 	text-decoration: none;
+		 	
+		 	color: #222;
+			font-weight: 300;
+
+		 	vertical-align: top;
+		 	background-color: #fff;
+		 	line-height: 37px;
+		 	width: 85%;
+		 }
+	</style>
+</head>
+<body>
+	<div id="container">
+
+		<div id="headerBg">
+			
+			<div id="interior">
+
+
+				<!--> header starts here -->
+
+				<div id="header">
+				
+					<div id="logo">
+						
+					</div>
+					
+					<div id="topNav">
+						<div class="topNavFont">News</div>
+						<div class="topNavFont greyFont">Videos</div>
+						<div class="topNavFont greyFont">TV</div>
+						<div class="topNavFont greyFont">Opinion</div>
+						<div class="topNavFont greyFont">More..</div>
+						<div class="topNightFloatRight">
+							
+							<div class="searchBox mainSearch"><input id="mainSearch" type="" name="" value="Search CNN"></div>
+							<div class="topNavFont greyFont topNavRight">U.S.Edition ></div>
+							
+						</div>
+					</div>
+
+				
+				
+					<div id="bottomNav">
+						
+						<div class="bottomNavFont">U.S</div>
+						<div class="bottomNavFont">World</div>
+						<div class="bottomNavFont">Politics</div>
+						<div class="bottomNavFont">Tech</div>
+						<div class="bottomNavFont">Health</div>
+						<div class="bottomNavFont">Entertainment</div>
+						<div class="bottomNavFont">Living</div>
+						<div class="bottomNavFont">Travel</div>
+						<div class="bottomNavFont moneyFont">Money</div>
+						<div class="bottomNavFont">Sports</div>
+						<div class="bottomNavFont bottomLiveTV">Watch Live TV ></div>
+					
+					</div> 
+
+				
+				</div> <!-- HEADER CODE ENDS HERE -->
+
+				<div id="content">
+
+					<div id="mainLeft">
+						<div class="mainLeftHeading">
+							<p class="mainLeftHeadingFont"> Top stories
+							</p>
+						</div>
+						
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont">Wife of slain Deputy Speaker</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont"> Husband shot on air</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont">Baseball fan falling from upper deck</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont">'Les Mis' actor turns 21</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont">See Russian stealth fighter jet</p>
+						</div>
+						
+
+					<div class="extraPaddingTop"></div>
+					<div id="mainLeft">
+					
+					<div class="mainLeftHeading">
+							<p class="mainLeftHeadingFont">
+								News and buzz </p>
+							
+					</div>
+
+					<div class="mainLeftItem">
+							<p class="mainLeftItemFont">Wife of slain Deputy Speaker</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont"> Husband shot on air</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont">Baseball fan falling from upper deck</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont">'Les Mis' actor turns 21</p>
+						</div>
+						<div class="mainLeftItem">
+							<p class="mainLeftItemFont">See Russian stealth fighter jet</p>
+						</div>
+					</div>
+				</div>
+				<div id="mainRight" >
+					
+					<div id="mainNewsStory">
+						<div id="mainStoryInfoTop"></div>
+							<div id="mainStoryInfo">
+								<div id="mainStoryLinks"> 
+								<a class="big" href="#" > #Trump Bible </a>
+								</div>
+							     <div id="mainStoryLinks">
+								<a class="medium" href="#"> Tweets reimagine the gospel according to Trump</a>
+							     </div>
+							     <div id="mainStoryLinks">
+								<a class="small" href="#"> Trump calls Antony Weiner a 'perv'  </a>
+								<a class="small" href="#">Trump: I dont want to run attack ads  </a>
+								<a class="small" href="#">Third party decision coming soon  </a>
+							     </div>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="#gapNewsRows">
+						
+					</div>
+					
+					
+						<div id="news1">
+
+							<div class="new1Image"></div>
+							
+							<div id="news1Heading"><a href="#" class="news1Heading">Wild series of insults and tweets by the President comes as North Korea fires utmost advanced missile</a>
+							</div>
+						</div>
+						<div id="politics">
+							
+							<div class="politicsHeading">
+							<p class="mainLeftHeadingFont"> Today in politics
+							</p>
+							</div>
+						
+							<div   class="politicsItem">
+								<a href="#" class="politicsItemFont politicsLinks">Women will remember who voted for this tax plan.</a>
+							</div>
+							<div    class="politicsItem ">
+								<a  href="#" class="politicsItemFont politicsLinks"> Where GOP senator who will decide tax reforms</a>
+							</div>
+							<div   class="politicsItem ">
+								<a href="#" class="politicsItemFont politicsLinks">Why house tax plan may crash grad students</a>
+							</div>
+							<div   class="politicsItem ">
+								<a href="#" class="politicsItemFont politicsLinks">Trump: Kim Jong Un a 'sick puppy'</a>
+							</div>
+							<div class="politicsItem ">
+								<a href="#" class="politicsItemFont politicsLinks">Law enforcements leader fight concealed- carry gun bill</a>
+							</div>		
+						</div>
+					</div>	
+					
+				</div>
+
+			</div>
+		</div>
+				
+	</div>
+				
+</body>
+</html>
